@@ -34,7 +34,7 @@ public class NeoPixelTest extends AbstractTest {
 
   /**
    * Test method for
-   * {@link org.myrobotlab.service.NeoPixel#attach(org.myrobotlab.service.interfaces.NeoPixelController, int, int)}.
+   * {@link org.myrobotlab.service.NeoPixel#isAttached(org.myrobotlab.framework.interfaces.Attachable)}.
    */
   @Test
   public void testAttachNeoPixelControllerIntInt() {
@@ -42,10 +42,10 @@ public class NeoPixelTest extends AbstractTest {
   }
 
   /**
-   * Test method for
-   * {@link org.myrobotlab.service.NeoPixel#detach(org.myrobotlab.service.interfaces.NeoPixelController)}.
-   * 
-   * @throws Exception
+   * Test method for detaching and
+   * {@link org.myrobotlab.service.NeoPixel#attach(org.myrobotlab.framework.interfaces.Attachable)}.
+   *
+   * @throws Exception may throw an exception
    */
   @Test
   public void testDetachNeoPixelController() throws Exception {
@@ -59,7 +59,7 @@ public class NeoPixelTest extends AbstractTest {
 
   /**
    * Test method for
-   * {@link org.myrobotlab.service.NeoPixel#sendPixel(int, int, int, int)}.
+   * {@link org.myrobotlab.service.NeoPixel#setPixel(int, int, int, int)}.
    */
   @Test
   public void testSendPixelIntIntIntInt() {
@@ -87,7 +87,7 @@ public class NeoPixelTest extends AbstractTest {
   }
 
   /**
-   * Test method for {@link org.myrobotlab.service.NeoPixel#turnOff()}.
+   * Test method for {@link org.myrobotlab.service.NeoPixel#clear()}.
    */
   @Test
   public void testTurnOff() {

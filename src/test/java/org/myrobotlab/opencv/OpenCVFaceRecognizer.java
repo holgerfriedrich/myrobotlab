@@ -30,7 +30,8 @@ import org.myrobotlab.test.AbstractTest;
  * face detection yet).
  *
  * For the simplicity of this post, the class also requires that the training
- * images have filename format: <label>-rest_of_filename.png. For example:
+ * images have filename format: {@code <label>-rest_of_filename.png}.
+ * For example:
  *
  * 1-jon_doe_1.png 1-jon_doe_2.png 2-jane_doe_1.png 2-jane_doe_2.png ...and so
  * on.

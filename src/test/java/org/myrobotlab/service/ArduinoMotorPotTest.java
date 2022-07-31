@@ -105,9 +105,9 @@ public class ArduinoMotorPotTest {
    * Helper function to run a program , return the stderr / stdout as a string
    * and to catch any exceptions that occur
    * 
-   * @param cmd
-   * @param args
-   * @return
+   * @param cmd command
+   * @param args arguments
+   * @return stderr / stdout, stacketrace for @IOException and @InterruptedException
    */
   protected String RunAndCatch(String cmd, ArrayList<String> args) {
     String returnValue;
@@ -129,11 +129,11 @@ public class ArduinoMotorPotTest {
    * Helper function to run a system command and return the stdout / stderr as a
    * string
    * 
-   * @param program
-   * @param args
-   * @return
-   * @throws IOException
-   * @throws InterruptedException
+   * @param program command to run
+   * @param args arguments
+   * @return stderr / stdout
+   * @throws IOException exception that might be thrown during execution of command
+   * @throws InterruptedException exception that might be thrown during execution of command
    */
   protected String runCommand(String program, ArrayList<String> args) throws IOException, InterruptedException {
 
